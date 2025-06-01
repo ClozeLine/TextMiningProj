@@ -1,10 +1,8 @@
 from datasets import load_dataset
 from simpletransformers.ner import NERModel, NERArgs
-from pathlib import Path
 from sklearn.metrics import classification_report
 import pandas as pd
 import torch
-print(torch.cuda.is_available(), torch.cuda.device_count(), torch.cuda.get_device_name(0) if torch.cuda.is_available() else None)
 
 
 def main_train_ner():
